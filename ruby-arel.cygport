@@ -1,12 +1,18 @@
 inherit rubygem
 
 NAME="ruby-arel"
-VERSION=3.0.2
+VERSION=4.0.2
 RELEASE=1
 CATEGORY="Ruby"
-SUMMARY="Ruby Arel extension"
+SUMMARY="Ruby SQL AST extension"
 DESCRIPTION="Arel is a SQL AST manager for Ruby. It 1. Simplifies the
 generation of complex SQL queries 2. Adapts to various RDBMS systems It is
 intended to be a framework framework; that is, you can build your own ORM with
 it, focusing on innovative object and collection modeling as opposed to
 database compatibility and query generation."
+
+ARCH=noarch
+
+PKG_NAMES="${NAME} ${NAME}-doc"
+ruby_arel_CONTENTS=${RUBYGEM_INSTDIR#/}" "${RUBYGEM_SPEC#/}
+ruby_arel_doc_CONTENTS=${RUBYGEM_DOCDIR#/}
