@@ -1,7 +1,7 @@
 inherit rubygem
 
 NAME="ruby-arel"
-VERSION=6.0.3
+VERSION=8.0.0
 RELEASE=1
 CATEGORY="Ruby"
 SUMMARY="Ruby SQL AST extension"
